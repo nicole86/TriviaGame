@@ -5,34 +5,69 @@
 	text-align: center;
  }
  #wrapper {
- 	height: 600px;
+ 	height: 500px;
  	width: 600px;
  	margin: 0 auto;
  	margin-top: 50px;
  	padding: 20px;
  	text-align: center;
  	background-color: white;
+ 	opacity: 0.95;
  	border: solid black;
  }
+
+#start {
+	height:auto;
+	width: auto;
+	background-color: white;
+	font-style: georgia;
+	font-size: 14pt;
+}
 
 h1 {
 	font-style: georgia;
 	font-style: italic;
-	font-size: 60pt;
-	padding: 30px;
+	font-size: 50pt;
+	padding: 20px;
+	margin-top:20px;
 }
-h2 {
+
+button {
+	display: block;
 	font-style: georgia;
-	font-size: 20pt;
-	padding-bottom:20px;
+	font-size: 14pt;
+	background: white;
+	margin:0 auto;
+	margin-top:20px;
+
 }
-#question {
+
+#quiz {
 	font-family: bold;
-	font-size: 30pt;
-	padding-bottom: 20px;
-}
-#answers {
-	font-style: georgia;
 	font-size: 20pt;
-	padding: 10px;
+	padding-bottom: 20px;
+	text-align: center;
 }
+
+/*@media screen and (max-width: 482px) {
+  #wrap-head {
+    margin-top: 50px;
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  #connect {
+    margin-right: 40px;
+  }
+  .text-white {
+    margin-left: 40px;
+  }
+  .text-thin {
+    margin-left: 40px;
+  }
+  .text-about {
+    margin-left: 45px;
+  }
+
+}*/
