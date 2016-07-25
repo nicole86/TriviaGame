@@ -1,0 +1,1 @@
+<?phpincludeonce('index.html'):?>
