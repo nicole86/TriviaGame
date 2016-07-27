@@ -1,14 +1,23 @@
- body {
+html,body {
+  height:100%;
+  text-align: center;
+}
+
+ #background {
+  height: 100%;
+  width: 100%;
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%; 
+	background-size:cover;
 	text-align: center;
+  padding-top:50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
  }
  #wrapper {
  	height: 500px;
  	width: 600px;
  	margin: 0 auto;
- 	margin-top: 50px;
  	padding: 20px;
  	text-align: center;
  	background-color: white;
@@ -49,25 +58,71 @@ button {
 	text-align: center;
 }
 
-/*@media screen and (max-width: 482px) {
-  #wrap-head {
-    margin-top: 50px;
-    width: 100%;
-  }
-  nav {
-    width: 100%;
-  }
-  #connect {
-    margin-right: 40px;
-  }
-  .text-white {
-    margin-left: 40px;
-  }
-  .text-thin {
-    margin-left: 40px;
-  }
-  .text-about {
-    margin-left: 45px;
+@media only screen and (max-width: 980px) {
+	#wrapper {
+    height: 400px;
+    width: 500px;
   }
 
-}*/
+}
+
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    height:350px;
+    width: 450px;
+  }
+  h1 {
+    font-size: 40pt;
+  }
+  #start {
+    	font-size: 13pt;
+  }
+  button {
+    font-size: 13pt;
+  }
+  #container {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #wrapper {
+    height:350px;
+    width: 400px;
+  }
+  h1 {
+    font-size: 30pt;
+    padding: 15px;
+  }
+  #start {
+    	font-size: 12pt;
+  }
+  button {
+    font-size: 12pt;
+  }
+  #container {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #wrapper {
+    height:300px;
+    width: 300px;
+  }
+  h1 {
+    font-size: 20pt;
+    padding: 10px;
+  }
+  #start {
+    	font-size: 10pt;
+  }
+  button {
+    font-size: 10pt;
+  }
+  .questions {
+    font-size 10pt;
+  }
+  #container {
+    height: 100%;
+  }
+}

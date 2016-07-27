@@ -122,7 +122,7 @@ var game = {
 
     $('#quiz').html('<h2>Out of Time!</h2>');
     $('#quiz').append('<h3>The Correct Answer was: ' + questions[this.currentQuestion].correctAnswer);
-    if (game.taken === questions.length - 1){
+    if (game.taken === questions.length){
       setTimeout(game.results, 2 * 1000);
     } else {
       setTimeout(game.nextQuestion, 2 * 1000);
@@ -153,7 +153,7 @@ var game = {
     clearInterval(timer);
     $('#quiz').html('<h2>Sorry!</h2>');
     $('#quiz').append('<h3>The Correct Answer was: ' + questions[game.currentQuestion].correctAnswer + '</h3>');
-    if (game.taken === questions.length - 1){
+    if (game.taken === questions.length){
       setTimeout(game.results, 3 * 1000);
     } else {
       setTimeout(game.nextQuestion, 3 * 1000);
@@ -164,7 +164,7 @@ var game = {
     game.correct++;
     $('#quiz').html('<h2>Correct!</h2>');
      $('#quiz').append('<h3>The Correct Answer was: ' + questions[game.currentQuestion].correctAnswer + '</h3>');
-    if (game.taken === questions.length - 1){
+    if (game.taken === questions.length){
       setTimeout(game.results, 3 * 1000);
     } else {
       setTimeout(game.nextQuestion, 3 * 1000);
