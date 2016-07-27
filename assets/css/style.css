@@ -58,7 +58,7 @@ button {
 	text-align: center;
 }
 
-@media only screen and (max-width: 980px) {
+/*@media only screen and (max-width: 980px) {
 	#wrapper {
     height: 400px;
     width: 500px;
@@ -125,4 +125,4 @@ button {
   #container {
     height: 100%;
   }
-}
+}*/
