@@ -96,7 +96,10 @@ var game = {
 		var rIndex = Math.floor(Math.random()*questions.length);
 
 		while(this.takenMap[rIndex])
-			rIndex = (rIndex+1 < questions.length)? rIndex++ : 0;
+      if(rIndex+1 < questions.length)
+        rIndex++;
+      else
+        rIndex = 0;
 
 		this.takenMap[rIndex] = true;
 		this.taken++;
@@ -134,6 +137,7 @@ var game = {
     $('#quiz').append('<h3>Incorrect Answers: ' + game.incorrect + '</h3>');
     $('#quiz').append('<h3>Unanswered: ' + (questions.length - (game.incorrect + game.correct)) + '</h3>');
     $('#quiz').append('<br><button id="start-over">Start Over?</button>');
+    this.reset();
   },
   clicked: function(e) {
     clearInterval(timer);
@@ -167,6 +171,8 @@ var game = {
     }
   },
 	reset: function(){
+    this.taken = 0;
+    this.takenMap = {};
     	this.currentQuestion = 0;
     	this.counter = startTime;
     	this.correct = 0;
